@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.des {
+    text-align:center;
+}
+
+header,
+footer {
+    flex: 1;
+    background-color: #666666;
+}
+
+.holy-grail-body {
+    display: flex;
+    flex: 1;
+    height: 500px;
+}
+
+.holy-grail-content {
+    flex: 1;
+    background-color: #d6d6d6;
+}
+
+.holy-grail-nav,.holy-grail-ads {
+    flex:0 0 12em;
+}
+
+.holy-grail-nav {
+    order: -1;
+    background-color: #77BBDD;
+}
+
+.holy-grail-ads {
+    background-color: #ff6633;
+}
+
+@media (max-width:768px) {
+    .holy-grail-body {
+        flex-direction: column;
+        flex: 1;
+    }
+    .holy-grail-content,
+    .holy-grail-nav,
+    .holy-grail-ads {
+        flex: auto;
+    }
+}
